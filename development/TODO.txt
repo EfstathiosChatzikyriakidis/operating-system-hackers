@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<gtodo>
+  <category title="Development" place="0">
+    <item>
+      <attribute id="1305977457" priority="2" done="0" start_date="734278" enddate="99999999" notify="0" endtime="-60" last_edited="1339933445"/>
+      <summary>Database</summary>
+      <comment>Write faster SQL statements in order to optimize the performance.</comment>
+    </item>
+    <item>
+      <attribute id="1305977347" priority="2" done="0" start_date="734278" enddate="99999999" notify="0" endtime="-60" last_edited="1339946008"/>
+      <summary>Security Issue</summary>
+      <comment>Write better filters for SQL Injection.</comment>
+    </item>
+    <item>
+      <attribute id="1323040718" priority="4" done="0" start_date="734476" notify="0" last_edited="1340388774"/>
+      <summary>Edit Account</summary>
+      <comment>Create an edit form which can be accessed through email address with a URL in order to edit an account.</comment>
+    </item>
+  </category>
+</gtodo>
