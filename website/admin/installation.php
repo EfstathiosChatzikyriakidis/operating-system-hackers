@@ -17,7 +17,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <!--
-  Copyright (C) 2011  Efstathios Chatzikyriakidis <contact@efxa.org>
+  Copyright (C) 2011  Efstathios Chatzikyriakidis <stathis.chatzikyriakidis@gmail.com>
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -154,7 +154,7 @@
                                     ) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci;";
 
                           $r8 = mysql_query ($query, $link);
-                          $query = "INSERT INTO `contents` (`id`, `email`, `url`, `text`, `marker`) VALUES (1, 'contact@efxa.org', 'efxa.org', 'To be or not to be.', 1);";
+                          $query = "INSERT INTO `contents` (`id`, `email`, `url`, `text`, `marker`) VALUES (1, 'stathis.chatzikyriakidis@gmail.com', 'efxa.org', 'To be or not to be.', 1);";
                           $r9 = mysql_query ($query, $link);
 
                           $query = "CREATE TABLE IF NOT EXISTS `registrations` (
@@ -177,65 +177,65 @@
                           else {
                             // create configuration file.
                             if ($handle = fopen ('../'.FILE_CONFIGURATION, 'w')) {
-                              $file_content = "<?php\n"                                                                      .
-                                              "  // define configuration properties.\n"                                      .
-                                              "\n"                                                                           .
-                                              "  /*\n"                                                                       .
-                                              "   *  Copyright (C) 2011  Efstathios Chatzikyriakidis <contact@efxa.org>\n"    .
-                                              "   *\n"                                                                       .
-                                              "   *  This program is free software: you can redistribute it and/or modify\n" .
-                                              "   *  it under the terms of the GNU General Public License as published by\n" .
-                                              "   *  the Free Software Foundation, either version 3 of the License, or\n"    .
-                                              "   *  (at your option) any later version.\n"                                  .
-                                              "   *\n"                                                                       .
-                                              "   *  This program is distributed in the hope that it will be useful,\n"      .
-                                              "   *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n"       .
-                                              "   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"         .
-                                              "   *  GNU General Public License for more details.\n"                         .
-                                              "   *\n"                                                                       .
-                                              "   *  You should have received a copy of the GNU General Public License\n"    .
-                                              "   *  along with this program. If not, see <http://www.gnu.org/licenses/>.\n" .
-                                              "   */\n"                                                                      .
-                                              "\n"                                                                           .
-                                              "  // mysql connection account information.\n"                                 .
-                                              "  define ('CONF_MYSQL_HOST' , '$hostname');\n"                                .
-                                              "  define ('CONF_MYSQL_USER' , '$username');\n"                                .
-                                              "  define ('CONF_MYSQL_PASS' , '$password');\n"                                .
-                                              "  define ('CONF_MYSQL_DB'   , '$database');\n"                                .
-                                              "\n"                                                                           .
-                                              "  // google maps usage properties.\n"                                         .
-                                              "  define ('CONF_GAPI_KEY' , '$gmapikey');\n"                                  .
-                                              "  define ('CONF_GAPI_LNG' , '$gmapilng');\n"                                  .
-                                              "\n"                                                                           .
-                                              "  // system address on google maps.\n"                                        .
-                                              "  define ('CONF_SYS_GMAP_ADDR' , '$gmapaddr');\n"                             .
-                                              "\n"                                                                           .
-                                              "  // email address.\n"                                                        .
-                                              "  define ('CONF_MAIL_ADDR' , '$mailaddr');\n"                                 .
-                                              "\n"                                                                           .
-                                              "  // random unique keys size.\n"                                              .
-                                              "  define ('CONF_SKEY_SIZE' , $skeysize);\n"                                   .
-                                              "\n"                                                                           .
-                                              "  // system web domain.\n"                                                    .
-                                              "  define ('CONF_WEB_DOMA' , '$webdoma');\n"                                   .
-                                              "\n"                                                                           .
-                                              "  // system web name.\n"                                                      .
-                                              "  define ('CONF_WEB_NAME' , '$webname');\n"                                   .
-                                              "\n"                                                                           .
-                                              "  // system web version.\n"                                                   .
-                                              "  define ('CONF_WEB_VERS' , '$webvers');\n"                                   .
-                                              "\n"                                                                           .
-                                              "  // system web title.\n"                                                     .
-                                              "  define ('CONF_WEB_TITL' , '$webtitl');\n"                                   .
-                                              "\n"                                                                           .
-                                              "  // system web description.\n"                                               .
-                                              "  define ('CONF_WEB_DESC' , '$webdesc');\n"                                   .
-                                              "\n"                                                                           .
-                                              "  // system web keywords.\n"                                                  .
-                                              "  define ('CONF_WEB_KEYS' , '$webkeys');\n"                                   .
-                                              "\n"                                                                           .
-                                              "  // statistics top types.\n"                                                 .
-                                              "  define ('CONF_STAT_TOP' , $statstop);\n"                                    .
+                              $file_content = "<?php\n"                                                                                         .
+                                              "  // define configuration properties.\n"                                                         .
+                                              "\n"                                                                                              .
+                                              "  /*\n"                                                                                          .
+                                              "   *  Copyright (C) 2011  Efstathios Chatzikyriakidis <stathis.chatzikyriakidis@gmail.com>\n"    .
+                                              "   *\n"                                                                                          .
+                                              "   *  This program is free software: you can redistribute it and/or modify\n"                    .
+                                              "   *  it under the terms of the GNU General Public License as published by\n"                    .
+                                              "   *  the Free Software Foundation, either version 3 of the License, or\n"                       .
+                                              "   *  (at your option) any later version.\n"                                                     .
+                                              "   *\n"                                                                                          .
+                                              "   *  This program is distributed in the hope that it will be useful,\n"                         .
+                                              "   *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n"                          .
+                                              "   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"                            .
+                                              "   *  GNU General Public License for more details.\n"                                            .
+                                              "   *\n"                                                                                          .
+                                              "   *  You should have received a copy of the GNU General Public License\n"                       .
+                                              "   *  along with this program. If not, see <http://www.gnu.org/licenses/>.\n"                    .
+                                              "   */\n"                                                                                         .
+                                              "\n"                                                                                              .
+                                              "  // mysql connection account information.\n"                                                    .
+                                              "  define ('CONF_MYSQL_HOST' , '$hostname');\n"                                                   .
+                                              "  define ('CONF_MYSQL_USER' , '$username');\n"                                                   .
+                                              "  define ('CONF_MYSQL_PASS' , '$password');\n"                                                   .
+                                              "  define ('CONF_MYSQL_DB'   , '$database');\n"                                                   .
+                                              "\n"                                                                                              .
+                                              "  // google maps usage properties.\n"                                                            .
+                                              "  define ('CONF_GAPI_KEY' , '$gmapikey');\n"                                                     .
+                                              "  define ('CONF_GAPI_LNG' , '$gmapilng');\n"                                                     .
+                                              "\n"                                                                                              .
+                                              "  // system address on google maps.\n"                                                           .
+                                              "  define ('CONF_SYS_GMAP_ADDR' , '$gmapaddr');\n"                                                .
+                                              "\n"                                                                                              .
+                                              "  // email address.\n"                                                                           .
+                                              "  define ('CONF_MAIL_ADDR' , '$mailaddr');\n"                                                    .
+                                              "\n"                                                                                              .
+                                              "  // random unique keys size.\n"                                                                 .
+                                              "  define ('CONF_SKEY_SIZE' , $skeysize);\n"                                                      .
+                                              "\n"                                                                                              .
+                                              "  // system web domain.\n"                                                                       .
+                                              "  define ('CONF_WEB_DOMA' , '$webdoma');\n"                                                      .
+                                              "\n"                                                                                              .
+                                              "  // system web name.\n"                                                                         .
+                                              "  define ('CONF_WEB_NAME' , '$webname');\n"                                                      .
+                                              "\n"                                                                                              .
+                                              "  // system web version.\n"                                                                      .
+                                              "  define ('CONF_WEB_VERS' , '$webvers');\n"                                                      .
+                                              "\n"                                                                                              .
+                                              "  // system web title.\n"                                                                        .
+                                              "  define ('CONF_WEB_TITL' , '$webtitl');\n"                                                      .
+                                              "\n"                                                                                              .
+                                              "  // system web description.\n"                                                                  .
+                                              "  define ('CONF_WEB_DESC' , '$webdesc');\n"                                                      .
+                                              "\n"                                                                                              .
+                                              "  // system web keywords.\n"                                                                     .
+                                              "  define ('CONF_WEB_KEYS' , '$webkeys');\n"                                                      .
+                                              "\n"                                                                                              .
+                                              "  // statistics top types.\n"                                                                    .
+                                              "  define ('CONF_STAT_TOP' , $statstop);\n"                                                       .
                                               "?>";
 
                               // write configuration content.

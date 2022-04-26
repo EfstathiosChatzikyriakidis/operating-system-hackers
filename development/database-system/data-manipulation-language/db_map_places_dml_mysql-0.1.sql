@@ -18,7 +18,7 @@ INSERT INTO `types` (`id`, `name`, `image`) VALUES (1, 'Debian', 'debian.png');
 
 INSERT INTO `markers` (`id`, `name`, `address`, `lat`, `lng`, `type`, `active`) VALUES (1, 'Efstathios Chatzikyriakidis', 'Hellas', 42.032974, 14.062500, 1, 1);
 
-INSERT INTO `contents` (`id`, `email`, `url`, `phone`, `text`, `marker`) VALUES (1, 'contact@efxa.org', 'efxa.org', '2310123456', 'To be or not to be.', 1);
+INSERT INTO `contents` (`id`, `email`, `url`, `phone`, `text`, `marker`) VALUES (1, 'stathis.chatzikyriakidis@gmail.com', 'efxa.org', '2310123456', 'To be or not to be.', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
